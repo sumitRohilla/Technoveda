@@ -89,7 +89,7 @@ const ambuminandglobulinratioChangeHandler = (event) => {
       popup.style.display = "block";
     }
     
-    fetch('http://localhost:5000/liver',{
+    fetch('https://technoveda.herokuapp.com/liver',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -102,7 +102,7 @@ const ambuminandglobulinratioChangeHandler = (event) => {
       console.log(err);
     });
 
-    fetch('http://localhost:5000/liver',{
+    fetch('https://technoveda.herokuapp.com/liver',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

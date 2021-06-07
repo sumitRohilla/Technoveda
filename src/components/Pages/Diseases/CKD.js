@@ -171,7 +171,7 @@ function displayPopUp() {
 
 
     
-    fetch('http://localhost:5000/kidney',{
+    fetch('https://technoveda.herokuapp.com/kidney',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -184,7 +184,7 @@ function displayPopUp() {
       console.log(err);
     });
 
-    fetch('http://localhost:5000/kidney',{
+    fetch('https://technoveda.herokuapp.com/kidney',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

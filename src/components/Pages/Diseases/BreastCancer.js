@@ -94,7 +94,7 @@ export default function BreastCancer() {
 
 
     
-    fetch('http://localhost:5000/breast',{
+    fetch('https://technoveda.herokuapp.com/breast',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -107,7 +107,7 @@ export default function BreastCancer() {
       console.log(err);
     });
 
-    fetch('http://localhost:5000/breast',{
+    fetch('https://technoveda.herokuapp.com/breast',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

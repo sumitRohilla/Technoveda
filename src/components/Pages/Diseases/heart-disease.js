@@ -98,7 +98,7 @@ export default function HeartDisease() {
         }
     
         
-        fetch('http://localhost:5000/heart',{
+        fetch('https://technoveda.herokuapp.com/heart',{
           method: 'POST',
           headers: {
             'Content-type': 'application/json',
@@ -111,7 +111,7 @@ export default function HeartDisease() {
           console.log(err);
         });
     
-        fetch('http://localhost:5000/heart',{
+        fetch('https://technoveda.herokuapp.com/heart',{
           method: 'GET',
           headers: {
             'Content-type': 'application/json',
