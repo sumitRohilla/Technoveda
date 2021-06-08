@@ -96,7 +96,7 @@ export default function Cardiovascular() {
 
 
     
-    fetch('https://technoveda.herokuapp.com/cardio',{
+    fetch('http://localhost:5000/cardio',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -109,7 +109,7 @@ export default function Cardiovascular() {
       console.log(err);
     });
 
-    fetch('https://technoveda.herokuapp.com/cardio',{
+    fetch('http://localhost:5000/cardio',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

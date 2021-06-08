@@ -73,7 +73,7 @@ export default function Diabetes() {
     }
 
     
-    fetch('https://technoveda.herokuapp.com/diabetes',{
+    fetch('technoveda.herokuapp.com/diabetes',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -86,7 +86,7 @@ export default function Diabetes() {
       console.log(err);
     });
 
-    fetch('https://technoveda.herokuapp.com/diabetes',{
+    fetch('technoveda.herokuapp.com/diabetes',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

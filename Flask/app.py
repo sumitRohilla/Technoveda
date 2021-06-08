@@ -14,7 +14,7 @@ def predict(model,df):
     return output
 
 @app.route('/breast',methods=['POST','GET'])
-@cross_origin(origin='technoveda.herokuapp.com',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def breast():
 
     if request.method == 'POST': 
@@ -32,7 +32,7 @@ def breast():
         return output,200
     
 @app.route('/diabetes',methods=['POST','GET'])
-@cross_origin(origin='technoveda.herokuapp',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def diabetes():
 
     if request.method == 'POST': 
@@ -49,7 +49,7 @@ def diabetes():
         return output,200
 
 @app.route('/cardio',methods=['POST','GET'])
-@cross_origin(origin='technoveda',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def cardio():
 
     if request.method == 'POST': 
@@ -73,7 +73,7 @@ def cardio():
 
     
 @app.route('/kidney',methods=['POST','GET'])
-@cross_origin(origin='herokuapp',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def kidney():
 
     if request.method == 'POST': 
@@ -89,7 +89,7 @@ def kidney():
 
 
 @app.route('/liver',methods=['POST','GET'])
-@cross_origin(origin='herokuapp.com',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def liver():
 
     if request.method == 'POST': 
@@ -113,7 +113,7 @@ def liver():
 
 
 @app.route('/heart',methods=['POST','GET'])
-@cross_origin(origin='http://technoveda.herokuapp.com',headers=['Content- Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def heart():
 
     if request.method == 'POST': 
