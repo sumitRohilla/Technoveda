@@ -140,23 +140,23 @@ export default function BreastCancer() {
       },
       body: JSON.stringify(submittingValue),
     }).then(res => res.text())         
-    .then(text => console.log(text)
+    .then(text =>  ( console.log(text), setOutput(text), displayPopUp() )
     ).catch((err) => {
       console.log(err);
     });
 
-    fetch('https://techno-vedha.herokuapp.com/breast',{
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json',
-        'Accept': 'application/json'
-      },
-    }).then(res => res.text())         
-    .then(text => setOutput(text),
-    displayPopUp()
-    ).catch((err) => {
-      console.log(err);
-    });  
+//     fetch('https://techno-vedha.herokuapp.com/breast',{
+//       method: 'GET',
+//       headers: {
+//         'Content-type': 'application/json',
+//         'Accept': 'application/json'
+//       },
+//     }).then(res => res.text())         
+//     .then(text => setOutput(text),
+//     displayPopUp()
+//     ).catch((err) => {
+//       console.log(err);
+//     });  
   }
 
 
