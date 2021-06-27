@@ -1,3 +1,9 @@
+
+# Poject is Live
+
+<a href="https://technoveda.github.io/technoveda/"><img src="https://img.shields.io/badge/-Game%20Link-4285F4?style=for-the-badge&logo=Google-Chrome&logoColor=white"/></a>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
