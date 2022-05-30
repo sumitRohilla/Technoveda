@@ -1,6 +1,7 @@
 {
   "name": "technoveda",
   "version": "0.1.0",
+  "homepage": "https://sumitrohilla.github.io/technoveda/",
   "private": true,
   "proxy": "https://techno-vedha.herokuapp.com",
   "dependencies": {
@@ -21,7 +22,9 @@
     "start-flask-api": "cd api && venv/bin/flask run",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

@@ -1,5 +1,5 @@
-import React, {Suspense}  from "react";
-import { Switch, Route ,BrowserRouter as Router} from "react-router-dom";
+import React, { Suspense } from "react";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Landing from "../src/components/Pages/Landing/Landing";
 import Diseases from "../src/components/Pages/Diseases/Diseases";
 
@@ -25,38 +25,38 @@ export default function App() {
     "font-size: 20px;"
   );
   return (
-   <Router>
-    <Switch>
-    <Suspense fallback={<Loading />}>
-   <Navbar />
-    <Route exact path="/">
-    <Landing />
-    {/* <Footer /> */}
-    </Route>
+    <Router>
+      <Switch>
+        <Suspense fallback={<Loading />}>
+          <Navbar />
+          <Route exact path='/'>
+            <Landing />
+            {/* <Footer /> */}
+          </Route>
 
 
-    <Route exact path="/Diseases" component={Diseases} />
-    
-    
-   
-  
-    <Route exact path="/Diabetes" component={Diabetes} />
-    <Route exact path="/BreastCancer" component={BreastCancer} />
-    <Route exact path="/Cardiovascular" component={Cardiovascular} />
-    <Route exact path="/heartDisease" component={heartDisease} />
-    <Route exact path="/LiverDisease" component={LiverDisease} />
-    <Route exact path="/CKD" component={CKD} />
+          <Route exact path="/Diseases" component={Diseases} />
 
 
-    <Route exact path="/login">
-    <Login />
-    </Route>
-    <Route exact path="/signup">
-    <Signup />
-    </Route>
-    <Footer />
-    </Suspense>
-    </Switch>
+
+
+          <Route exact path="/Diabetes" component={Diabetes} />
+          <Route exact path="/BreastCancer" component={BreastCancer} />
+          <Route exact path="/Cardiovascular" component={Cardiovascular} />
+          <Route exact path="/heartDisease" component={heartDisease} />
+          <Route exact path="/LiverDisease" component={LiverDisease} />
+          <Route exact path="/CKD" component={CKD} />
+
+
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
+          <Footer />
+        </Suspense>
+      </Switch>
     </Router>
-    );
+  );
 }
