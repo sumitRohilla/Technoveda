@@ -1,7 +1,6 @@
 {
   "name": "technoveda",
   "version": "0.1.0",
-  "homepage": "https://sumitrohilla.github.io/technoveda/",
   "private": true,
   "proxy": "https://techno-vedha.herokuapp.com",
   "dependencies": {
